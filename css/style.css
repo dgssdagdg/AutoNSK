@@ -1447,6 +1447,9 @@ body {
   .services-item:nth-of-type(2) .services-item-title {
     top: 75px !important;
   }
+  .services-item .services-block-text {
+    margin-bottom: 10px !important;
+  }
   .services-title {
     text-align: start;
     margin-bottom: 33px;
