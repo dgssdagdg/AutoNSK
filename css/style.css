@@ -2470,6 +2470,7 @@ body {
   letter-spacing: -0.05em;
   color: #000000;
   margin-bottom: 13px;
+  font-family: "Inter";
 }
 
 .footer-left-tel {
@@ -2478,6 +2479,7 @@ body {
   line-height: 99.02%;
   letter-spacing: -0.1em;
   color: #000000;
+  font-family: "Inter";
 }
 
 .footer-left-links {
