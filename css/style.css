@@ -1079,7 +1079,7 @@ body {
 }
 @media (max-width: 767px) {
   .profitable {
-    padding: 71px 0 35px;
+    padding: 71px 10px 35px;
   }
   .profitable-body {
     row-gap: 62px;
