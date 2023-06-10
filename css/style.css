@@ -1141,6 +1141,7 @@ body {
   left: 150px;
   bottom: -110px;
   z-index: 1;
+  pointer-events: none;
 }
 .sell-img img {
   width: 438px;
