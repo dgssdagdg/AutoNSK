@@ -977,8 +977,8 @@ body {
 
 .intro-body-link,
 .intro-body-sub-link {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   background: #FE5C01;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1009,16 +1009,16 @@ body {
   transition: all 0.3s ease 0s;
 }
 .intro-body-links-active .intro-body-sub-link:nth-of-type(1) {
-  -webkit-transform: translateY(-55px);
-          transform: translateY(-55px);
+  -webkit-transform: translateY(-65px);
+          transform: translateY(-65px);
 }
 .intro-body-links-active .intro-body-sub-link:nth-of-type(2) {
-  -webkit-transform: translateY(-110px);
-          transform: translateY(-110px);
+  -webkit-transform: translateY(-130px);
+          transform: translateY(-130px);
 }
 .intro-body-links-active .intro-body-sub-link:nth-of-type(3) {
-  -webkit-transform: translateY(-165px);
-          transform: translateY(-165px);
+  -webkit-transform: translateY(-195px);
+          transform: translateY(-195px);
 }
 
 .intro-forms-block {
