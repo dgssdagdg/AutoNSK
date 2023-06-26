@@ -3071,6 +3071,7 @@ body {
   .immediate-intro .menu-title {
     font-size: 86px;
     display: inline !important;
+    z-index: -1;
   }
   .immediate-intro .menu-title span br {
     display: none;
