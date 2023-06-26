@@ -1066,6 +1066,7 @@ body {
     font-size: 36px;
     line-height: 100%;
     letter-spacing: -0.06em;
+    z-index: 1;
   }
   .intro-body .intro-body-content {
     display: -webkit-box;
