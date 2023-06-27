@@ -3073,7 +3073,7 @@ body {
     display: inline !important;
     z-index: -1;
   }
-  .immediate-intro .menu-title span br {
+  .immediate-intro .menu-title br:nth-of-type(2) {
     display: none;
   }
 }
