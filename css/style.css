@@ -4609,6 +4609,9 @@ body {
 .prodat-wrapper .services {
   padding: 43px 0 122px;
 }
+.prodat-wrapper .services .services-item:nth-of-type(1) .services-block-text, .prodat-wrapper .services .services-item:nth-of-type(5) .services-block-text, .prodat-wrapper .services .services-item:nth-of-type(6) .services-block-text {
+  margin-bottom: 30px;
+}
 .prodat-wrapper .write {
   padding: 122px 0 82px;
 }
