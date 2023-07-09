@@ -4899,6 +4899,9 @@ body {
 .prodat-needs .needs-body {
   position: relative;
 }
+.prodat-needs .needs-title {
+  max-width: 396px;
+}
 
 .prodat-needs-img {
   position: absolute;
