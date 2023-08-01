@@ -1,0 +1,243 @@
+            <div class="vykuplennyye">
+                <div class="container">
+                    <div class="vykuplennyye-row">
+                        <div class="vykuplennyye-sliders">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="vykuplennyye-img">
+                                        <img src="../img/vykuplennyye/vykuplennyye-img.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="vykuplennyye-img">
+                                        <img src="../img/vykuplennyye/vykuplennyye-img.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="vykuplennyye-img">
+                                        <img src="../img/vykuplennyye/vykuplennyye-img.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vykuplennyye-block vykuplennyye-block-situation">
+                                <div class="vykuplennyye-box">СИТУАЦИЯ</div>
+                                <div class="vykuplennyye-texts">
+                                    <div class="vykuplennyye-text">Долги по алиментам и штрафы. Наложен запрет на регистрационные действия, закрыт выезд из страны заблокированы банковские карты</div>
+                                    <img src="../img/vykuplennyye/vykuplennyye-stop.webp" alt="situation">
+                                </div>
+                            </div>
+                            <div class="vykuplennyye-block vykuplennyye-block-solution">
+                                <div class="vykuplennyye-box">РЕШЕНИЕ</div>
+                                <div class="vykuplennyye-texts">
+                                    <div class="vykuplennyye-text">Через 3 часа авто продано. Частью денежных стредств оплачены судебные задолженности и штрафы. Остаток денег передан наличными.</div>
+                                    <img src="../img/vykuplennyye/vykuplennyye-yes.webp" alt="solution">
+                                </div>
+                            </div>
+                            <div class="vykuplennyye-pagination pagination"></div>
+                            <div class="vykuplennyye-button-prev button-prev">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.292893 7.29289C-0.097631 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928931C7.68054 0.538407 7.04738 0.538407 6.65685 0.928931L0.292893 7.29289ZM16 7L1 7L1 9L16 9L16 7Z" fill="#CDCDCD"/>
+                                    </svg>
+                                    
+                            </div>
+                            <div class="vykuplennyye-button-next button-next">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.7071 7.29289C16.0976 7.68342 16.0976 8.31658 15.7071 8.70711L9.34315 15.0711C8.95262 15.4616 8.31946 15.4616 7.92893 15.0711C7.53841 14.6805 7.53841 14.0474 7.92893 13.6569L13.5858 8L7.92893 2.34315C7.53841 1.95262 7.53841 1.31946 7.92893 0.928931C8.31946 0.538407 8.95262 0.538407 9.34315 0.928931L15.7071 7.29289ZM-8.74228e-08 7L15 7L15 9L8.74228e-08 9L-8.74228e-08 7Z" fill="#CDCDCD"/>
+                                    </svg>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+//vykuplennyye------------------------------------
+.vykuplennyye {
+    padding: 345px 0 205px;
+}
+.vykuplennyye-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vykuplennyye-sliders {
+    height: 550px;
+    max-width: 1039px;
+    position: relative;
+    & .swiper-slide {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+    }
+    & .swiper-slide-active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.vykuplennyye-img {
+    height: 100%;
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+        border-radius: 5px;
+        border: 1px solid #CDCDCD;
+    }
+}
+.vykuplennyye-block {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.vykuplennyye-block-situation {
+    top: -117px;
+    left: 39px;
+    & .vykuplennyye-box {
+        background: #E70D0D;
+    }
+    & .vykuplennyye-texts {
+        & img {
+            top: -30px;
+            right: -14px;
+        }
+    }
+}
+.vykuplennyye-box {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 114.996%;
+    padding: 20px 28px 32px;
+    border-radius: 5px 5px 0px 0px;
+    margin-bottom: -12px;
+}
+.vykuplennyye-texts {
+    border-radius: 5px;
+    background: #F2F2F2;
+    position: relative;
+    max-width: 560px;
+    padding: 28px;
+    & img {
+        position: absolute;
+    }
+}
+.vykuplennyye-text {
+    color: #383838;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 135%;
+}
+.vykuplennyye-block-solution {
+    right: 40px;
+    bottom: -50px;
+    align-items: flex-end;
+    & .vykuplennyye-box {
+        background: #18CC2A;
+    }
+    & .vykuplennyye-texts {
+        & img {
+            top: -63px;
+            left: -23px;
+        }
+    }
+}
+.vykuplennyye-pagination {
+    display: none;
+    & .swiper-pagination-bullet-active {
+        background-color: #017BFE;
+        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25) inset;
+    }
+}
+.vykuplennyye-button-prev {
+    left: -25px;
+}
+.vykuplennyye-button-next {
+    right: -25px;
+}
+
+@media (max-width: 1200px) {
+    .vykuplennyye-sliders {
+        max-width: 100%;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .vykuplennyye-pagination {
+        display: flex;
+        bottom: -113px !important;
+    }
+    .vykuplennyye {
+        padding: 242px 0 150px;
+        & .container {
+            padding: 0 10px;
+        }
+    }
+    .vykuplennyye-button-next,
+    .vykuplennyye-button-prev {
+        bottom: -133px;
+        top: auto;
+        left: auto;
+        z-index: 5;
+    }
+    .vykuplennyye-button-next{
+        right: 0;
+    }
+    .vykuplennyye-sliders {
+        margin: 0;
+        height: 460px;
+    }
+    .vykuplennyye-box {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 114.996%;
+        padding: 14px 14px 26px;
+    }
+    .vykuplennyye-block-situation {
+        left: 14px;
+        & .vykuplennyye-texts {
+            & img {
+                bottom: -21px;
+                top: auto;
+                right: -8px;
+            }
+        }
+    }
+    .vykuplennyye-block-solution {
+        right: 14px;
+        & .vykuplennyye-texts {
+            & img {
+                bottom: -21px;
+                top: auto;
+                left: auto;
+                right: -3px;
+                max-width: 14.4%;
+            }
+        }
+    }
+    .vykuplennyye-text {
+        color: #383838;
+        font-size: 15px;
+        line-height: 135%;
+    }
+    .vykuplennyye-texts {
+        max-width: 272px;
+        padding: 14px;
+        & img {
+            
+            max-width: 18.4%;
+        }
+    }
+}
+
+
+
