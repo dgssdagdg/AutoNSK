@@ -5587,6 +5587,9 @@ body {
 .vukup-zapret-wrapper .edge .edge-block-text {
   line-height: 130%;
 }
+.vukup-zapret-wrapper .menu-title {
+  letter-spacing: -5.76px;
+}
 
 .vukup-zapret-wrapper .profitable,
 .vukup-credit-wrapper .profitable {
@@ -5797,6 +5800,7 @@ body {
 }
 .vukup-credit-wrapper .intro .menu-title {
   font-size: 76px;
+  max-width: 1440px;
 }
 .vukup-credit-wrapper .profitable-item:nth-of-type(3) {
   -webkit-box-flex: 0;
