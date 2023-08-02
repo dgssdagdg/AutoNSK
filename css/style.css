@@ -5931,6 +5931,7 @@ body {
   .vukup-credit-wrapper .ransom .ransom-title {
     margin-bottom: 24px;
     color: #000;
+    font-weight: 600;
   }
   .vukup-credit-wrapper .ransom .ransom-text br {
     display: none;
