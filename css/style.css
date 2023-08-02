@@ -4463,14 +4463,27 @@ body {
 .used-car-sliders {
   max-width: 600px;
   height: 450px;
-  -webkit-filter: drop-shadow(0px 4px 88px #344E76);
-          filter: drop-shadow(0px 4px 88px #344E76);
   z-index: 1;
-  border-radius: 5px;
-  overflow: hidden;
-  border: 1px solid #CDCDCD;
+}
+.used-car-sliders .swiper-slide {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+}
+.used-car-sliders .swiper-slide-active {
+  opacity: 1;
+  visibility: visible;
 }
 
+.used-car-slide {
+  z-index: 1;
+  position: relative;
+  -webkit-filter: drop-shadow(0px 4px 88px #344E76);
+          filter: drop-shadow(0px 4px 88px #344E76);
+  border-radius: 5px;
+  border: 1px solid #CDCDCD;
+}
 .used-car-slide .auto-slider-line:nth-of-type(3) {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.61)));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.61) 100%);
@@ -4555,6 +4568,11 @@ body {
 @media (max-width: 1200px) {
   .used-car-sliders {
     margin-bottom: 26px;
+    height: auto;
+  }
+  .used-car-slide {
+    height: 450px;
+    margin-bottom: 26px;
   }
   .used-car-box {
     position: relative;
@@ -4626,7 +4644,8 @@ body {
   }
   .used-car-sliders {
     max-width: 280px;
-    height: 400px;
+  }
+  .used-car-slide {
     -webkit-filter: none;
             filter: none;
   }
@@ -5831,6 +5850,16 @@ body {
 .vukup-credit-wrapper .reviews .reviews-title {
   margin-bottom: 25px;
 }
+.vukup-credit-wrapper .ransom {
+  padding: 70px 0;
+}
+.vukup-credit-wrapper .ransom .ransom-title {
+  max-width: 640px;
+  margin-bottom: 26px;
+}
+.vukup-credit-wrapper .ransom .ransom-text {
+  max-width: 704px;
+}
 
 @media (max-width: 1303px) {
   .vukup-credit-wrapper .situations .situations-img {
@@ -5895,6 +5924,16 @@ body {
   }
   .vukup-credit-wrapper .reviews .reviews-title {
     margin-bottom: 7px;
+  }
+  .vukup-credit-wrapper .ransom {
+    padding: 40px 0;
+  }
+  .vukup-credit-wrapper .ransom .ransom-title {
+    margin-bottom: 24px;
+    color: #000;
+  }
+  .vukup-credit-wrapper .ransom .ransom-text br {
+    display: none;
   }
 }
 @media (max-width: 424px) {
