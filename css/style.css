@@ -247,6 +247,7 @@ body {
   visibility: hidden;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  z-index: 2;
 }
 .header-center-sub-list li {
   width: 100%;
