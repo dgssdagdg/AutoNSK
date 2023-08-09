@@ -4530,6 +4530,10 @@ body {
   max-width: 331px;
   text-align: start;
 }
+.used-car-box-text a {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: underline;
+}
 
 .used-car-box-stop {
   -webkit-box-align: start;
@@ -4632,7 +4636,7 @@ body {
     color: #2B2B2B;
   }
   .used-car-item-title {
-    text-align: start;
+    text-align: center;
     margin-bottom: 24px;
     color: #000;
     max-width: 260px;
@@ -4643,12 +4647,16 @@ body {
   .used-car {
     padding: 33px 0 40px;
   }
+  .used-car .block-flex {
+    width: 100%;
+  }
   .used-car-sliders {
-    max-width: 280px;
+    max-width: 100%;
   }
   .used-car-slide {
     -webkit-filter: none;
             filter: none;
+    height: 350px;
   }
   .used-car-box {
     padding: 18px;
@@ -4669,6 +4677,17 @@ body {
   }
   .used-car-item:not(:last-child) {
     margin-bottom: 60px;
+  }
+}
+@media (max-width: 424px) {
+  .used-car-slide {
+    height: 300px;
+  }
+  .used-car-slide .auto-slider-top {
+    top: 24px;
+  }
+  .used-car-slide .auto-slider-price {
+    bottom: 42px;
   }
 }
 .prodat-intro .intro-body {
