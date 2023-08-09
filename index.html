@@ -255,9 +255,12 @@
         <div data-id="#1" class="pop-up pop-up-global">
             <div class="pop-up-content">
                 <div class="pop-up-title _title">Обратный звонок</div>
-                <form action="./php/php.php" method="post" class="pop-up-body">
-                    <input placeholder="Телефон для связи" name="phone" type="tel" class="pop-up-input _input">
-                    <button type="submit" class="pop-up-btn _btn">Отправить</button>
+                <form action="./php/mail.php" method="post" class="pop-up-body">
+                    <fieldset>
+                        <input placeholder="Телефон для связи" name="phone" type="tel" class="pop-up-input _input">
+                        <input type="submit" class="pop-up-btn _btn" value="Отправить сообщение">
+                        <!-- <button type="submit" class="pop-up-btn _btn">Отправить</button> -->
+                    </fieldset>
                 </form>
                 <div class="pop-up-text _text">Нажимая кнопку “Отправить” вы соглашаетесь с условиями политики конфиденциальности</div>
                 <img src="./img/pop-up-img.webp" alt="Обратный звонок" class="pop-up-img">
